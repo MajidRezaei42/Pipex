@@ -36,7 +36,7 @@ void	free_data(t_pipex *data)
 		free(data->cmd2_path);
 }
 
-void	exit_error(*msg, t_pipex *data)
+void	exit_error(char *msg, t_pipex *data)
 {
 	perror(msg);
 	free_data(data);
